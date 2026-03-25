@@ -12,3 +12,8 @@ print("Hello, World!")
 // Merge all overlapping intervals
 let intervals = [[1,3],[2,6],[8,10],[15,18]]
 print(merge(intervals))
+
+// Sort colors
+var colors = [2,0,2,1,1,0]
+sortColors(&colors)
+print("Sort colors: \(colors)")
