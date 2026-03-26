@@ -17,3 +17,6 @@ print(merge(intervals))
 var colors = [2,0,2,1,1,0]
 sortColors(&colors)
 print("Sort colors: \(colors)")
+
+// Longest palindromic substring
+print("Longest palindromic substring: \(longestPalindrome("babad"))")
