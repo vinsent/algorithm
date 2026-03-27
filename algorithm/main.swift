@@ -20,3 +20,5 @@ print("Sort colors: \(colors)")
 
 // Longest palindromic substring
 print("Longest palindromic substring: \(longestPalindrome("babad"))")
+
+print("Two sum II: \(twoSumII([2,7,11,15], 9))")
