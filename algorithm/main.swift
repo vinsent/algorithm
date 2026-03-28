@@ -22,3 +22,6 @@ print("Sort colors: \(colors)")
 print("Longest palindromic substring: \(longestPalindrome("babad"))")
 
 print("Two sum II: \(twoSumII([2,7,11,15], 9))")
+
+var duplicatesNode = ListNode(1, ListNode(2, ListNode(3, ListNode(3, ListNode(4, ListNode(4, ListNode(5)))))))
+print("Delete duplicates: \(deleteDuplicates(duplicatesNode)?.toArray(), default: "nil")")

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A7ACD622F77D3C7008E7F40 /* ListNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7ACD612F77D3C7008E7F40 /* ListNode.swift */; };
 		D7E4B11D2DDED71500774661 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E4B11C2DDED71500774661 /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +24,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3A7ACD612F77D3C7008E7F40 /* ListNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListNode.swift; sourceTree = "<group>"; };
 		D7E4B1192DDED71500774661 /* algorithm */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = algorithm; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7E4B11C2DDED71500774661 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -30,6 +32,7 @@
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		3A77B6AD2F724E9E0014A05F /* Array */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Array; sourceTree = "<group>"; };
 		3A7ACD492F752C58008E7F40 /* String */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = String; sourceTree = "<group>"; };
+		3A7ACD5E2F77D335008E7F40 /* LinkedList */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = LinkedList; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,9 +65,11 @@
 		D7E4B11B2DDED71500774661 /* algorithm */ = {
 			isa = PBXGroup;
 			children = (
+				3A7ACD5E2F77D335008E7F40 /* LinkedList */,
 				3A7ACD492F752C58008E7F40 /* String */,
 				3A77B6AD2F724E9E0014A05F /* Array */,
 				D7E4B11C2DDED71500774661 /* main.swift */,
+				3A7ACD612F77D3C7008E7F40 /* ListNode.swift */,
 			);
 			path = algorithm;
 			sourceTree = "<group>";
@@ -87,6 +92,7 @@
 			fileSystemSynchronizedGroups = (
 				3A77B6AD2F724E9E0014A05F /* Array */,
 				3A7ACD492F752C58008E7F40 /* String */,
+				3A7ACD5E2F77D335008E7F40 /* LinkedList */,
 			);
 			name = algorithm;
 			productName = algorithm;
@@ -131,6 +137,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A7ACD622F77D3C7008E7F40 /* ListNode.swift in Sources */,
 				D7E4B11D2DDED71500774661 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
