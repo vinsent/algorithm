@@ -25,3 +25,8 @@ print("Two sum II: \(twoSumII([2,7,11,15], 9))")
 
 var duplicatesNode = ListNode(1, ListNode(2, ListNode(3, ListNode(3, ListNode(4, ListNode(4, ListNode(5)))))))
 print("Delete duplicates: \(deleteDuplicates(duplicatesNode)?.toArray(), default: "nil")")
+
+var linkedTail = ListNode(-4)
+var linkedList = ListNode(3, ListNode(2, ListNode(0, linkedTail)))
+linkedTail.next = linkedList.next
+print("Lineked list cycle position node: \(detectCycle(linkedList)?.val, default: "nil")")
