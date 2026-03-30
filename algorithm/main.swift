@@ -30,3 +30,5 @@ var linkedTail = ListNode(-4)
 var linkedList = ListNode(3, ListNode(2, ListNode(0, linkedTail)))
 linkedTail.next = linkedList.next
 print("Lineked list cycle position node: \(detectCycle(linkedList)?.val, default: "nil")")
+
+print(" Merge K sorted lists: \(mergeKLists([ListNode(1, ListNode(4, ListNode(5))), ListNode(1, ListNode(3, ListNode(6))), ListNode(2, ListNode(6))])?.toArray(), default: "nil")")
