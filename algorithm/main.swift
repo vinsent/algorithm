@@ -34,3 +34,6 @@ print("Lineked list cycle position node: \(detectCycle(linkedList)?.val, default
 print("Merge K sorted lists: \(mergeKLists([ListNode(1, ListNode(4, ListNode(5))), ListNode(1, ListNode(3, ListNode(6))), ListNode(2, ListNode(6))])?.toArray(), default: "nil")")
 
 print("Partition lists: \(partitionLinkedList(ListNode(1, ListNode(4, ListNode(3, ListNode(2, ListNode(5, ListNode(2)))))), 3)?.toArray(), default: "nil")")
+
+
+print("Split linked list in parts: \(splitListToParts(ListNode(1, ListNode(2, ListNode(3))), 5), default: "nil")")
