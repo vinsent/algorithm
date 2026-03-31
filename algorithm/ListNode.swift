@@ -27,3 +27,28 @@ extension ListNode {
         return r
     }
 }
+
+extension Array where Element == Int {
+    func toListNode() -> ListNode? {
+        let head = ListNode()
+        var temp = head
+        for integer in self {
+            let node = ListNode(integer)
+            temp.next = node
+            temp = node
+        }
+        return head.next
+    }
+}
+
+extension ListNode: CustomStringConvertible {
+    public var description: String {
+        var res = "\(val)"
+        var temp = self.next
+        while let node = temp {
+            res += " -> \(node.val)"
+            temp = node.next
+        }
+        return res
+    }
+}

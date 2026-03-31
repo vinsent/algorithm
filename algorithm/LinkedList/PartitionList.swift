@@ -25,8 +25,8 @@ import Foundation
 
 func partitionLinkedList(_ head: ListNode?, _ x: Int) -> ListNode? {
     var temp = head
-    var smallHead = ListNode(-1)
-    var greateHead = ListNode(-1)
+    let smallHead = ListNode(-1)
+    let greateHead = ListNode(-1)
     var small: ListNode? = smallHead
     var greate: ListNode? = greateHead
     

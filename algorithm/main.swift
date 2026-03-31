@@ -23,17 +23,16 @@ print("Longest palindromic substring: \(longestPalindrome("babad"))")
 
 print("Two sum II: \(twoSumII([2,7,11,15], 9))")
 
-var duplicatesNode = ListNode(1, ListNode(2, ListNode(3, ListNode(3, ListNode(4, ListNode(4, ListNode(5)))))))
-print("Delete duplicates: \(deleteDuplicates(duplicatesNode)?.toArray(), default: "nil")")
+var duplicatesNode = [1, 2, 3, 3, 4, 4, 5].toListNode()
+print("Delete duplicates: \(deleteDuplicates(duplicatesNode), default: "nil")")
 
 var linkedTail = ListNode(-4)
 var linkedList = ListNode(3, ListNode(2, ListNode(0, linkedTail)))
 linkedTail.next = linkedList.next
 print("Lineked list cycle position node: \(detectCycle(linkedList)?.val, default: "nil")")
 
-print("Merge K sorted lists: \(mergeKLists([ListNode(1, ListNode(4, ListNode(5))), ListNode(1, ListNode(3, ListNode(6))), ListNode(2, ListNode(6))])?.toArray(), default: "nil")")
+print("Merge K sorted lists: \(mergeKLists([[1, 4, 5].toListNode(), [1, 3, 6].toListNode(), [2, 6].toListNode()]), default: "nil")")
 
-print("Partition lists: \(partitionLinkedList(ListNode(1, ListNode(4, ListNode(3, ListNode(2, ListNode(5, ListNode(2)))))), 3)?.toArray(), default: "nil")")
+print("Partition lists: \(partitionLinkedList([1, 4, 3, 2, 5, 2].toListNode(), 3), default: "nil")")
 
-
-print("Split linked list in parts: \(splitListToParts(ListNode(1, ListNode(2, ListNode(3))), 5), default: "nil")")
+print("Split linked list in parts: \(splitListToParts([1, 2, 3].toListNode(), 5))")
