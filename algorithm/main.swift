@@ -37,5 +37,5 @@ print("Partition lists: \(partitionLinkedList([1, 4, 3, 2, 5, 2].toListNode(), 3
 
 print("Split linked list in parts: \(splitListToParts([1, 2, 3].toListNode(), 5))")
 
-let tree = [1,2,3,4,nil,2,4,nil,nil,4].toTreeNode()
-print(tree)
+let duplicateTree = [1,2,3,4,nil,2,4,nil,nil,4,].toTreeNode()
+print("Find duplicate subtrees: \(findDuplicateSubtrees(duplicateTree))")

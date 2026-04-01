@@ -20,6 +20,31 @@ public class TreeNode {
     }
 }
 
+extension TreeNode : CustomStringConvertible {
+    public var description: String {
+        var res = ""
+        
+        var queue = [self]
+        while !queue.isEmpty {
+            let node = queue.removeFirst()
+            
+            res += "\(node.val),"
+            
+            if let l = node.left {
+                queue.append(l)
+            }
+            if let r = node.right {
+                queue.append(r)
+            }
+        }
+        
+        if !res.isEmpty {
+            res.removeLast()
+        }
+        return res
+    }
+}
+
 extension Array where Element == Int? {
     func toTreeNode() -> TreeNode? {
             guard let f = first else { return nil }

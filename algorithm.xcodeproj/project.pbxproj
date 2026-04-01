@@ -32,6 +32,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		3A1B4ABD2F7D3D27005FFA5D /* BinaryTree */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = BinaryTree; sourceTree = "<group>"; };
 		3A77B6AD2F724E9E0014A05F /* Array */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Array; sourceTree = "<group>"; };
 		3A7ACD492F752C58008E7F40 /* String */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = String; sourceTree = "<group>"; };
 		3A7ACD5E2F77D335008E7F40 /* LinkedList */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = LinkedList; sourceTree = "<group>"; };
@@ -67,6 +68,7 @@
 		D7E4B11B2DDED71500774661 /* algorithm */ = {
 			isa = PBXGroup;
 			children = (
+				3A1B4ABD2F7D3D27005FFA5D /* BinaryTree */,
 				3A7ACD5E2F77D335008E7F40 /* LinkedList */,
 				3A7ACD492F752C58008E7F40 /* String */,
 				3A77B6AD2F724E9E0014A05F /* Array */,
@@ -93,6 +95,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
+				3A1B4ABD2F7D3D27005FFA5D /* BinaryTree */,
 				3A77B6AD2F724E9E0014A05F /* Array */,
 				3A7ACD492F752C58008E7F40 /* String */,
 				3A7ACD5E2F77D335008E7F40 /* LinkedList */,
