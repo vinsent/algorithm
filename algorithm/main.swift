@@ -40,4 +40,4 @@ print("Split linked list in parts: \(splitListToParts([1, 2, 3].toListNode(), 5)
 let duplicateTree = [1,2,3,4,nil,2,4,nil,nil,4,].toTreeNode()
 print("Find duplicate subtrees: \(findDuplicateSubtrees(duplicateTree))")
 
-print("Can jump: \(canJump([2,3,1,1,4]))")
+print("Can jump: \(canJump([2,3,1,1,4])), step: \(jump([2,3,1,1,4]))")

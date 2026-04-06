@@ -18,8 +18,9 @@ import Foundation
  Input: nums = [2,3,1,1,4]
  Output: true
  Explanation: Jump 1 step from index 0 to 1, then 3 steps to the last index.
+ 
+ 
  Example 2:
-
  Input: nums = [3,2,1,0,4]
  Output: false
  Explanation: You will always arrive at index 3 no matter what. Its maximum jump length is 0, which makes it impossible to reach the last index.
@@ -33,4 +34,38 @@ func canJump(_ nums: [Int]) -> Bool {
         if reach >= nums.count { return true }
     }
     return false
+}
+
+/*
+ You are given a 0-indexed array of integers nums of length n. You are initially positioned at index 0.
+
+ Each element nums[i] represents the maximum length of a forward jump from index i. In other words, if you are at index i, you can jump to any index (i + j) where:
+
+ 0 <= j <= nums[i] and
+ i + j < n
+ Return the minimum number of jumps to reach index n - 1. The test cases are generated such that you can reach index n - 1.
+
+  
+
+ Example 1:
+ Input: nums = [2,3,1,1,4]
+ Output: 2
+ Explanation: The minimum number of jumps to reach the last index is 2. Jump 1 step from index 0 to 1, then 3 steps to the last index.
+ 
+ Example 2:
+ Input: nums = [2,3,0,1,4]
+ Output: 2
+ */
+
+func jump(_ nums: [Int]) -> Int {
+    var i = 0, pos = 0, reach = 0, step = 0
+    while i < nums.count - 1 {
+        reach = max(reach, nums[i] + i)
+        if i == pos {
+            pos = reach
+            step += 1
+        }
+        i += 1
+    }
+    return step
 }
