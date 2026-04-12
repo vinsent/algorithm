@@ -43,3 +43,5 @@ print("Find duplicate subtrees: \(findDuplicateSubtrees(duplicateTree))")
 print("Can jump: \(canJump([2,3,1,1,4])), step: \(jump([2,3,1,1,4]))")
 
 print("Minimum total sum: \(minimumTotal([[2],[3,4],[6,5,7],[4,1,8,3]]))")
+
+print("Longest consecutive sequence: \(longestConsecutive([0,3,7,2,5,8,4,6,0,1]))")
