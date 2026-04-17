@@ -25,10 +25,12 @@ import Foundation
 
 func sortArray(_ nums: [Int]) -> [Int] {
     var nums = nums
-    quickSortProcess(&nums, left: 0, right: nums.count - 1)
+//    quickSortProcess(&nums, left: 0, right: nums.count - 1)
+    mergeSortProcess(&nums, left: 0, right: nums.count - 1)
     return nums
 }
 
+// MARK: - Quick sort
 fileprivate func quickSortProcess(_ nums: inout [Int], left: Int, right: Int) {
     guard left < right else { return }
     
@@ -58,3 +60,43 @@ fileprivate func partition(_ nums: inout [Int], left: Int, right: Int) -> Int {
     return low
 }
 
+// MARK: - Merge sort
+fileprivate func mergeSortProcess(_ nums: inout [Int], left: Int, right: Int) {
+    guard left < right else { return }
+    
+    let mid = left + (right - left) / 2
+    
+    mergeSortProcess(&nums, left: left, right: mid)
+    mergeSortProcess(&nums, left: mid + 1, right: right)
+    
+    merge(&nums, left: left, mid: mid, right: right)
+}
+
+fileprivate func merge(_ nums: inout [Int], left: Int, mid: Int, right: Int) {
+    guard left < right else { return }
+    
+    var low = left, high = mid + 1
+    var result = [Int]()
+    
+    while low <= mid && high <= right {
+        if nums[low] <= nums[high] {
+            result.append(nums[low])
+            low += 1
+        } else {
+            result.append(nums[high])
+            high += 1
+        }
+    }
+    
+    while low <= mid {
+        result.append(nums[low])
+        low += 1
+    }
+    
+    while high <= right {
+        result.append(nums[high])
+        high += 1
+    }
+    
+    nums[left...right] = result[0...]
+}
