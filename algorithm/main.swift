@@ -50,3 +50,7 @@ print("Sort an array: \(sortArray([5,1,1,2,0,0]))")
 
 let isBST = isValidBST([5,1,4,nil,nil,3,6].toTreeNode())
 print("Validate binary search tree: \(isBST)")
+
+var duplicateNums = [0,0,1,1,1,1,2,3,3]
+let k = removeDuplicates(&duplicateNums)
+print("Remove duplicate nums: \(duplicateNums), k:\(k)")
