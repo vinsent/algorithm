@@ -54,3 +54,7 @@ print("Validate binary search tree: \(isBST)")
 var duplicateNums = [0,0,1,1,1,1,2,3,3]
 let k = removeDuplicates(&duplicateNums)
 print("Remove duplicate nums: \(duplicateNums), k:\(k)")
+
+var rotateArr = [1,2,3,4,5,6,7]
+rotate(&rotateArr, 3)
+print("Rotate array: \(rotateArr)")
