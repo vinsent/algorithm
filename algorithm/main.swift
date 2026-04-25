@@ -58,3 +58,7 @@ print("Remove duplicate nums: \(duplicateNums), k:\(k)")
 var rotateArr = [1,2,3,4,5,6,7]
 rotate(&rotateArr, 3)
 print("Rotate array: \(rotateArr)")
+
+print("Best time to buy and sell stock: \(maxProfit([7,1,5,3,6,4]))")
+
+print("Longest substring without repeating characters: \(lengthOfLongestSubstring(" "))")
